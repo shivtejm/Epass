@@ -1,0 +1,18 @@
+{
+  "name": "epass",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev:frontend & npm run dev:backend",
+    "dev:frontend": "npm run dev --workspace=epass-frontend",
+    "dev:backend": "npm run dev --workspace=epass-backend",
+    "build": "npm run build --workspace=epass-frontend && npm run build --workspace=epass-backend",
+    "build:frontend": "npm run build --workspace=epass-frontend",
+    "build:backend": "npm run build --workspace=epass-backend",
+    "start:frontend": "npm run start --workspace=epass-frontend",
+    "start:backend": "npm run start --workspace=epass-backend"
+  }
+}
